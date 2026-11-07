@@ -49,4 +49,9 @@ Complete system control : has control over the entire hardware
 The kernel executes the requested operation and returns control to user mode."
 
 
+**System Calls : Execution flow**
+- When user program want to access any system resources, it invokes a system call.
+- Then the mode switching happens and cpu changes the privililedges to kernel mode. Executes the command in 
+  safe environment and returns the flow to user mode again. 
+- *NOTE* : Mode switching is different from context switching where the calling program is blocked.
 
