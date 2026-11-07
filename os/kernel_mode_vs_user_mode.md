@@ -63,6 +63,6 @@ The kernel executes the requested operation and returns control to user mode."
 - Memory Management : Used to allocate, deallocate, terminate and block memory. brk(), sbrk(), mnap(), mlock()
 - Process Control : Used to create, execute, terminate process. Ex fork(), exec(), wait(), exit(), kill()
 - Interprocess Communication (IPC) : Used to transfer data between different processes. Ex socket(), semget().
-- Device Management : open(), close(), WriteConsole(), ReadConsole()
+- Device Management : Used to request and release devices Ex. open(), close(), WriteConsole(), ReadConsole()
 
 
