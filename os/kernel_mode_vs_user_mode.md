@@ -59,3 +59,10 @@ The kernel executes the requested operation and returns control to user mode."
 
 ![Types of system calls](https://media.geeksforgeeks.org/wp-content/uploads/20251202114956548681/frame_11.webp)
 
+- File System : Used to create, open, close, save a file in the system. Ex. open(), close(), read(), write(), seek()
+- Memory Management : Used to allocate, deallocate, terminate and block memory. brk(), sbrk(), mnap(), mlock()
+- Process Control : Used to create, execute, terminate process. Ex fork(), exec(), wait(), exit(), kill()
+- Interprocess Communication (IPC) : Used to transfer data between different processes. Ex socket(), semget().
+- Device Management : open(), close(), WriteConsole(), ReadConsole()
+
+
