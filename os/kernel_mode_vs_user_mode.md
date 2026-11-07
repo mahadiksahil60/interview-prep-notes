@@ -55,3 +55,7 @@ The kernel executes the requested operation and returns control to user mode."
   safe environment and returns the flow to user mode again. 
 - *NOTE* : Mode switching is different from context switching where the calling program is blocked.
 
+**Types of system calls**
+
+![Types of system calls](https://media.geeksforgeeks.org/wp-content/uploads/20251202114956548681/frame_11.webp)
+
