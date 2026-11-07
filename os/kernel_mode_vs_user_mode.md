@@ -1,49 +1,48 @@
-**  Kernel vs user mode **
+**Kernel vs user mode**
 
 - User mode is for running normal applications. It has limited access to system resources.
 - Kernel mode runs the core os and has all the control over hardware.
 - This seperation ensures security, stability and efficient resource management
 
-User Mode
+**User Mode**
 - When a program starts, the OS creates a seperate process and assigns its own memory space 
 - Program in user mode cannot access hardware or kernel memory directly it has to request 
   access through system calls to kernel
 
-Key features
+**Key features**
 - Isolated environment : Each process has its own memory space.
 - No direct hardware access : Only accessible to kernel services.
 - Safe Excecution : Errors or crashes dont affect entire system.
 
-Advantages :
+**Advantages :**
 - Easier debugging : Since each process is isolated debugging is easier
 - Crash control : One crash cannot affect other applications or os 
 - Security : Since application cannot access other application memory and system hardware its secure 
 
-Disadvantage :
+**Disadvantage :**
 Overheaad : Since all the communication happens through system calls to the kernel it introduces a significant overhead. 
 Low control : Developers have low control over the hardware might result in lesser control over the memory.
 
 
-Kernel mode 
-
+**Kernel mode**
 Kernel mode is a privileged mode where kernel operates, it has unlimited access to all machine resources, storage, cpu and gpu.
 When it receives a request from user mode it executes the operations and then the control returns to user mode 
 
-Key features :
+**Key features :**
 Direct hardware access : Has access to all the hardware components 
 Complete system control : has control over the entire hardware
 
-Advantages :
+**Advantages :**
 - Full hardware access
 - Low overhead
 - Advance scheduling : multitasking, thread syncnorization, context switches 
 
-Disadvantages :
+**Disadvantages :**
 - High risk of system crash : errors can affect entire os 
 - Harder to debug : mistakes in kernel are harder to identify and fix.
 - Security issues : Exposes a security risks
 
-Interview-ready answer:
+**Interview-ready answer:**
 
 "User mode and kernel mode are CPU execution privilege levels. An application running in user mode invokes a system call,
  which triggers a controlled CPU privilege transition into kernel mode.
